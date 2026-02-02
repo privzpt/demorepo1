@@ -6,6 +6,8 @@ import subprocess
 app = Flask(__name__)
 app.secret_key = os.urandom(24)
 
+echo $_GET['asdf'];
+
 # Simulating a database of user accounts and their private notes
 users = {
     1: {"id": 1, "username": "alice", "password": generate_password_hash("password123")},
